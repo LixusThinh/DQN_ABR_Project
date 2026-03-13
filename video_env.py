@@ -70,6 +70,7 @@ class VideoEnv:
         # 3. Tính rebuffering và cập nhật buffer
         rebuffer_time = max(delay - self.buffer_size, 0.0)
         self.buffer_size = max(self.buffer_size - delay, 0.0) + CHUNK_LENGTH
+        self.buffer_size = min(self.buffer_size, 30.0)
         
         # 4. Tính Reward (QoE_log)
         q_current = np.log(bitrate / BITRATES[0])
