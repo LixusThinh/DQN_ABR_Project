@@ -19,6 +19,7 @@ class VideoEnv:
         self.bw_arr = bw_arr
         self.trace_idx = 0 
         self.total_chunks = 48 # Giả sử video có 48 chunks
+        self.next_chunk_sizes = [(b * CHUNK_LENGTH) / 1000.0 for b in BITRATES]
         
     def reset(self):
         """
@@ -34,7 +35,7 @@ class VideoEnv:
         # Chọn ngẫu nhiên 1 thời điểm bắt đầu trong file mạng
         self.trace_idx = np.random.randint(0, len(self.bw_arr) - 1)
         
-        return self.state
+        return self.state.copy()
 
     def step(self, action):
         """
@@ -76,6 +77,8 @@ class VideoEnv:
         q_current = np.log(bitrate / BITRATES[0])
         q_last = np.log(BITRATES[self.last_bitrate_idx] / BITRATES[0])
         reward = q_current - (REBUF_PENALTY * rebuffer_time) - (SMOOTH_PENALTY * abs(q_current - q_last))
+        reward = np.clip(reward, -10.0, 10.0)
+        
         
         # 5. Cập nhật trạng thái
         self.video_chunk_counter += 1
@@ -86,12 +89,11 @@ class VideoEnv:
         self.state = np.roll(self.state, -1, axis=1)
         
         # Cập nhật cột mới nhất
-        self.state[0, -1] = chunk_size_megabits / delay # Throughput
+        self.state[0, -1] = chunk_size_megabits / max(delay, 1e-6) # Throughput
         self.state[1, -1] = delay # Download time
         
         if not done:
-            next_chunk_sizes = [(b * CHUNK_LENGTH) / 1000.0 for b in BITRATES]
-            self.state[2, :6] = next_chunk_sizes
+            self.state[2, :6] = self.next_chunk_sizes
         else:
             self.state[2, :6] = np.zeros(6)
             
@@ -107,7 +109,7 @@ class VideoEnv:
             'buffer_size': self.buffer_size
         }
         
-        return self.state, reward, done, info
+        return self.state.copy(), reward, done, info
 
 # ==================== TEST SCRIPT ====================
 if __name__ == "__main__":
