@@ -1,0 +1,604 @@
+{
+  "checkpoint_path": "models/dqn_model.pth",
+  "num_traces": 20,
+  "trace_files": [
+    "trace_test_0.txt",
+    "trace_test_1.txt",
+    "trace_test_10.txt",
+    "trace_test_11.txt",
+    "trace_test_12.txt",
+    "trace_test_13.txt",
+    "trace_test_14.txt",
+    "trace_test_15.txt",
+    "trace_test_16.txt",
+    "trace_test_17.txt",
+    "trace_test_18.txt",
+    "trace_test_19.txt",
+    "trace_test_2.txt",
+    "trace_test_3.txt",
+    "trace_test_4.txt",
+    "trace_test_5.txt",
+    "trace_test_6.txt",
+    "trace_test_7.txt",
+    "trace_test_8.txt",
+    "trace_test_9.txt"
+  ],
+  "agents": {
+    "DQN": {
+      "agent": "DQN",
+      "summary": {
+        "num_episodes": 20,
+        "average_reward": 1.6710942648573268,
+        "average_bitrate": 2578.229166666667,
+        "rebuffer_time": 2.4536025049649677,
+        "smoothness": 180.31914893617022
+      },
+      "episodes": [
+        {
+          "trace": "trace_test_0.txt",
+          "total_reward": 118.80993976706637,
+          "average_reward": 2.4752070784805493,
+          "average_bitrate": 4087.5,
+          "rebuffer_time": 0.4197418587568645,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_1.txt",
+          "total_reward": 120.64597002048863,
+          "average_reward": 2.5134577087601797,
+          "average_bitrate": 4152.083333333333,
+          "rebuffer_time": 0.20931449502878074,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_10.txt",
+          "total_reward": 38.42295084377818,
+          "average_reward": 0.8004781425787121,
+          "average_bitrate": 759.375,
+          "rebuffer_time": 1.0653566229985443,
+          "smoothness": 28.72340425531915,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_11.txt",
+          "total_reward": 73.29069897515794,
+          "average_reward": 1.526889561982457,
+          "average_bitrate": 3729.1666666666665,
+          "rebuffer_time": 15.383464330445518,
+          "smoothness": 177.6595744680851,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_12.txt",
+          "total_reward": 56.59564704530028,
+          "average_reward": 1.1790759801104225,
+          "average_bitrate": 1547.9166666666667,
+          "rebuffer_time": 2.105031765238897,
+          "smoothness": 303.1914893617021,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_13.txt",
+          "total_reward": 94.08500019254915,
+          "average_reward": 1.9601041706781073,
+          "average_bitrate": 2538.5416666666665,
+          "rebuffer_time": 0.6365034742481303,
+          "smoothness": 143.61702127659575,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_14.txt",
+          "total_reward": 116.41891949251261,
+          "average_reward": 2.4253941560940127,
+          "average_bitrate": 3992.7083333333335,
+          "rebuffer_time": 0.6841895204971777,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_15.txt",
+          "total_reward": 43.35045747811932,
+          "average_reward": 0.9031345307941524,
+          "average_bitrate": 1233.3333333333333,
+          "rebuffer_time": 1.5657696807621595,
+          "smoothness": 405.3191489361702,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_16.txt",
+          "total_reward": 48.198006315979946,
+          "average_reward": 1.0041251315829156,
+          "average_bitrate": 1244.7916666666667,
+          "rebuffer_time": 1.4505951546394928,
+          "smoothness": 327.6595744680851,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_17.txt",
+          "total_reward": 31.514868311467023,
+          "average_reward": 0.6565597564888963,
+          "average_bitrate": 904.1666666666666,
+          "rebuffer_time": 3.8708674356831234,
+          "smoothness": 152.12765957446808,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_18.txt",
+          "total_reward": 84.23338234089151,
+          "average_reward": 1.7548621321019064,
+          "average_bitrate": 2082.2916666666665,
+          "rebuffer_time": 0.44172106120365173,
+          "smoothness": 203.19148936170214,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_19.txt",
+          "total_reward": 120.43260639824138,
+          "average_reward": 2.5090126332966953,
+          "average_bitrate": 4152.083333333333,
+          "rebuffer_time": 0.2895263830916592,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_2.txt",
+          "total_reward": 44.429108499668146,
+          "average_reward": 0.9256064270764197,
+          "average_bitrate": 1097.9166666666667,
+          "rebuffer_time": 1.160811196800914,
+          "smoothness": 281.9148936170213,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_3.txt",
+          "total_reward": 92.65127498615557,
+          "average_reward": 1.9302348955449078,
+          "average_bitrate": 2977.0833333333335,
+          "rebuffer_time": 2.1197246064917135,
+          "smoothness": 447.8723404255319,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_4.txt",
+          "total_reward": 78.29723350023903,
+          "average_reward": 1.631192364588313,
+          "average_bitrate": 3789.5833333333335,
+          "rebuffer_time": 13.810553628098472,
+          "smoothness": 177.6595744680851,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_5.txt",
+          "total_reward": 75.80433464048443,
+          "average_reward": 1.5792569716767588,
+          "average_bitrate": 1843.75,
+          "rebuffer_time": 0.5286809410520751,
+          "smoothness": 291.48936170212767,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_6.txt",
+          "total_reward": 36.18334421944799,
+          "average_reward": 0.7538196712384998,
+          "average_bitrate": 721.875,
+          "rebuffer_time": 1.553927813163482,
+          "smoothness": 9.574468085106384,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_7.txt",
+          "total_reward": 118.14557207251318,
+          "average_reward": 2.4613660848440246,
+          "average_bitrate": 4152.083333333333,
+          "rebuffer_time": 1.149313723590985,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_8.txt",
+          "total_reward": 92.23165511186153,
+          "average_reward": 1.9214928148304484,
+          "average_bitrate": 2436.4583333333335,
+          "rebuffer_time": 0.5209690023443605,
+          "smoothness": 145.74468085106383,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_9.txt",
+          "total_reward": 120.50952405111171,
+          "average_reward": 2.5106150843981605,
+          "average_bitrate": 4121.875,
+          "rebuffer_time": 0.10598740516335307,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        }
+      ]
+    },
+    "BOLA": {
+      "agent": "BOLA",
+      "summary": {
+        "num_episodes": 20,
+        "average_reward": 1.6154584043061597,
+        "average_bitrate": 2521.4583333333335,
+        "rebuffer_time": 0.7511904031591607,
+        "smoothness": 393.3510638297872
+      },
+      "episodes": [
+        {
+          "trace": "trace_test_0.txt",
+          "total_reward": 117.04277841295199,
+          "average_reward": 2.4383912169364996,
+          "average_bitrate": 4017.7083333333335,
+          "rebuffer_time": 0.24584622318739627,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_1.txt",
+          "total_reward": 117.20255354378664,
+          "average_reward": 2.4417198654955548,
+          "average_bitrate": 4008.3333333333335,
+          "rebuffer_time": 0.19361396602074896,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_10.txt",
+          "total_reward": 18.718968603108934,
+          "average_reward": 0.38997851256476945,
+          "average_bitrate": 768.75,
+          "rebuffer_time": 2.06004810090059,
+          "smoothness": 258.51063829787233,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_11.txt",
+          "total_reward": 102.97154529195784,
+          "average_reward": 2.145240526915788,
+          "average_bitrate": 3594.7916666666665,
+          "rebuffer_time": 0.27861620617599253,
+          "smoothness": 702.1276595744681,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_12.txt",
+          "total_reward": 57.72401590038031,
+          "average_reward": 1.2025836645912564,
+          "average_bitrate": 1589.5833333333333,
+          "rebuffer_time": 0.22772126916654017,
+          "smoothness": 535.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_13.txt",
+          "total_reward": 89.11936166599658,
+          "average_reward": 1.8566533680415953,
+          "average_bitrate": 2589.5833333333335,
+          "rebuffer_time": 0.36511896793038395,
+          "smoothness": 429.78723404255317,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_14.txt",
+          "total_reward": 115.40892969489374,
+          "average_reward": 2.404352701976953,
+          "average_bitrate": 3957.2916666666665,
+          "rebuffer_time": 0.24158479626348847,
+          "smoothness": 146.80851063829786,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_15.txt",
+          "total_reward": 56.380672905848755,
+          "average_reward": 1.1745973522051825,
+          "average_bitrate": 1354.1666666666667,
+          "rebuffer_time": 0.3830683777054204,
+          "smoothness": 348.93617021276594,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_16.txt",
+          "total_reward": 53.19818611833418,
+          "average_reward": 1.108295544131962,
+          "average_bitrate": 1310.4166666666667,
+          "rebuffer_time": 0.7236762754794356,
+          "smoothness": 353.1914893617021,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_17.txt",
+          "total_reward": 29.531757997902382,
+          "average_reward": 0.615244958289633,
+          "average_bitrate": 918.75,
+          "rebuffer_time": 1.802093856185141,
+          "smoothness": 287.2340425531915,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_18.txt",
+          "total_reward": 76.0782833512659,
+          "average_reward": 1.584964236484706,
+          "average_bitrate": 2175.0,
+          "rebuffer_time": 0.3862619499790775,
+          "smoothness": 635.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_19.txt",
+          "total_reward": 115.3675140003906,
+          "average_reward": 2.4034898750081375,
+          "average_bitrate": 4038.5416666666665,
+          "rebuffer_time": 1.0381010230940555,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_2.txt",
+          "total_reward": 27.37671393966684,
+          "average_reward": 0.5703482070763924,
+          "average_bitrate": 991.6666666666666,
+          "rebuffer_time": 2.843626322813761,
+          "smoothness": 331.9148936170213,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_3.txt",
+          "total_reward": 90.02214677576562,
+          "average_reward": 1.8754613911617837,
+          "average_bitrate": 2956.25,
+          "rebuffer_time": 0.3671296579575353,
+          "smoothness": 803.1914893617021,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_4.txt",
+          "total_reward": 105.12471266006132,
+          "average_reward": 2.190098180417944,
+          "average_bitrate": 3625.0,
+          "rebuffer_time": 0.24226762496971654,
+          "smoothness": 578.7234042553191,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_5.txt",
+          "total_reward": 58.85445070286926,
+          "average_reward": 1.2261343896431096,
+          "average_bitrate": 1729.1666666666667,
+          "rebuffer_time": 1.0030761175469598,
+          "smoothness": 677.6595744680851,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_6.txt",
+          "total_reward": 17.475161789630047,
+          "average_reward": 0.3640658706172926,
+          "average_bitrate": 721.875,
+          "rebuffer_time": 1.8476202348659652,
+          "smoothness": 220.2127659574468,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_7.txt",
+          "total_reward": 106.51454347176575,
+          "average_reward": 2.2190529889951196,
+          "average_bitrate": 3706.25,
+          "rebuffer_time": 0.19147612133203554,
+          "smoothness": 578.7234042553191,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_8.txt",
+          "total_reward": 79.82428249736655,
+          "average_reward": 1.6630058853618033,
+          "average_bitrate": 2358.3333333333335,
+          "rebuffer_time": 0.28465023602248735,
+          "smoothness": 639.3617021276596,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_9.txt",
+          "total_reward": 116.90348880997041,
+          "average_reward": 2.435489350207717,
+          "average_bitrate": 4017.7083333333335,
+          "rebuffer_time": 0.2982107355864811,
+          "smoothness": 85.1063829787234,
+          "num_steps": 48
+        }
+      ]
+    },
+    "Rate-Based": {
+      "agent": "Rate-Based",
+      "summary": {
+        "num_episodes": 20,
+        "average_reward": 1.4176878916545936,
+        "average_bitrate": 1896.9791666666667,
+        "rebuffer_time": 0.9868449177423102,
+        "smoothness": 138.56382978723403
+      },
+      "episodes": [
+        {
+          "trace": "trace_test_0.txt",
+          "total_reward": 104.18584307860638,
+          "average_reward": 2.1705383974709664,
+          "average_bitrate": 3129.1666666666665,
+          "rebuffer_time": 0.2283713317854832,
+          "smoothness": 301.06382978723406,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_1.txt",
+          "total_reward": 102.41945940163141,
+          "average_reward": 2.133738737533988,
+          "average_bitrate": 2827.0833333333335,
+          "rebuffer_time": 0.27393507738665934,
+          "smoothness": 115.95744680851064,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_10.txt",
+          "total_reward": -0.04229307692165296,
+          "average_reward": -0.0008811057692011034,
+          "average_bitrate": 403.125,
+          "rebuffer_time": 1.7382506527415142,
+          "smoothness": 57.4468085106383,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_11.txt",
+          "total_reward": 99.78654539221955,
+          "average_reward": 2.0788863623379075,
+          "average_bitrate": 2692.7083333333335,
+          "rebuffer_time": 0.281181901258289,
+          "smoothness": 96.80851063829788,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_12.txt",
+          "total_reward": 31.835822944107402,
+          "average_reward": 0.6632463113355709,
+          "average_bitrate": 946.875,
+          "rebuffer_time": 4.030484485574306,
+          "smoothness": 193.61702127659575,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_13.txt",
+          "total_reward": 82.75695515068395,
+          "average_reward": 1.7241032323059156,
+          "average_bitrate": 1817.7083333333333,
+          "rebuffer_time": 0.3474937016766571,
+          "smoothness": 32.97872340425532,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_14.txt",
+          "total_reward": 113.16040761347803,
+          "average_reward": 2.357508491947459,
+          "average_bitrate": 3752.0833333333335,
+          "rebuffer_time": 0.3951267698386566,
+          "smoothness": 208.51063829787233,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_15.txt",
+          "total_reward": 47.553490493933936,
+          "average_reward": 0.9906977186236237,
+          "average_bitrate": 1032.2916666666667,
+          "rebuffer_time": 0.7815043959622272,
+          "smoothness": 150.0,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_16.txt",
+          "total_reward": 37.25364394557154,
+          "average_reward": 0.7761175821994071,
+          "average_bitrate": 787.5,
+          "rebuffer_time": 0.648228176318064,
+          "smoothness": 76.59574468085107,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_17.txt",
+          "total_reward": 24.185175222555582,
+          "average_reward": 0.5038578171365746,
+          "average_bitrate": 637.5,
+          "rebuffer_time": 0.8974646623289207,
+          "smoothness": 67.02127659574468,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_18.txt",
+          "total_reward": 68.21855704005148,
+          "average_reward": 1.4212199383344057,
+          "average_bitrate": 1567.7083333333333,
+          "rebuffer_time": 0.44321329639889195,
+          "smoothness": 241.48936170212767,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_19.txt",
+          "total_reward": 97.60950925340082,
+          "average_reward": 2.0335314427791835,
+          "average_bitrate": 2975.0,
+          "rebuffer_time": 1.0688883034773446,
+          "smoothness": 331.9148936170213,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_2.txt",
+          "total_reward": 27.11779310362934,
+          "average_reward": 0.5649540229922779,
+          "average_bitrate": 712.5,
+          "rebuffer_time": 1.5262437243267915,
+          "smoothness": 86.17021276595744,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_3.txt",
+          "total_reward": 83.50970882731193,
+          "average_reward": 1.7397856005689984,
+          "average_bitrate": 1991.6666666666667,
+          "rebuffer_time": 0.5515973339462192,
+          "smoothness": 139.36170212765958,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_4.txt",
+          "total_reward": 97.0706993872708,
+          "average_reward": 2.0223062372348086,
+          "average_bitrate": 2630.2083333333335,
+          "rebuffer_time": 0.4898958971218616,
+          "smoothness": 139.36170212765958,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_5.txt",
+          "total_reward": 54.75065452473474,
+          "average_reward": 1.1406386359319738,
+          "average_bitrate": 1288.5416666666667,
+          "rebuffer_time": 2.6418995973492017,
+          "smoothness": 154.25531914893617,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_6.txt",
+          "total_reward": -4.157078924966557,
+          "average_reward": -0.08660581093680327,
+          "average_bitrate": 300.0,
+          "rebuffer_time": 1.562811625927277,
+          "smoothness": 0.0,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_7.txt",
+          "total_reward": 104.81277495908336,
+          "average_reward": 2.1835994783142367,
+          "average_bitrate": 3194.7916666666665,
+          "rebuffer_time": 0.3938817041948401,
+          "smoothness": 198.93617021276594,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_8.txt",
+          "total_reward": 77.38951476810182,
+          "average_reward": 1.612281557668788,
+          "average_bitrate": 1731.25,
+          "rebuffer_time": 1.1982879545372802,
+          "smoothness": 32.97872340425532,
+          "num_steps": 48
+        },
+        {
+          "trace": "trace_test_9.txt",
+          "total_reward": 111.56319288392618,
+          "average_reward": 2.324233185081795,
+          "average_bitrate": 3521.875,
+          "rebuffer_time": 0.23813776269571946,
+          "smoothness": 146.80851063829786,
+          "num_steps": 48
+        }
+      ]
+    }
+  }
+}
