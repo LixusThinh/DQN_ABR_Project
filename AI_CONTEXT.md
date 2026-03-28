@@ -22,3 +22,16 @@ Tối ưu hóa việc lựa chọn bitrate video bằng thuật toán DQN để 
 1. **Evaluation:** Viết script script `eval.py` để chạy model đã train trên tập dữ liệu mạng (trace) mới.
 2. **Baselines:** Triển khai thuật toán BOLA (Lyapunov-based) và Rate-based (Heuristic) để làm mốc so sánh.
 3. **Visualization:** Vẽ biểu đồ so sánh QoE giữa DQN, BOLA và Rate-based.
+
+Week 6: Completed (Evaluation + Baselines + Visualization)
+Next: Analysis + Report Writing
+
+## Current Status (Week 6 - ~90% done)
+- DQN (Double DQN, PyTorch): trained 1000 episodes, checkpoint models/dqn_model.pth
+- Evaluation (20 test traces): 
+  - DQN: QoE=1.642, Avg Bitrate=2581 kbps, Rebuffer=1.49%, Switches=7.8
+  - BOLA: QoE=1.562, Avg Bitrate=2516 kbps, Rebuffer=0.56%, Switches=19.9
+  - Rate-Based: QoE=1.371, Avg Bitrate=1865 kbps, Rebuffer=0.59%, Switches=8.8
+- Locked: Reward = QoE_log (μ=2.66, REBUF_PENALTY=2.66), State (6,8), next_chunk_sizes in state[2,:6]
+- Tradeoff accepted: DQN aggressive → higher rebuffer documented as limitation
+- Todo: Fix plot/demo imports, generate training curves, update thesis references
